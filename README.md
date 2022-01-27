@@ -14,7 +14,7 @@
 -
 ### 接線方式
 
-<img src="https://github.com/Oliver0804/ESP32_SpaceRat/blob/main/pic/simlation.png" height="104" />
+<img src="https://github.com/Oliver0804/ESP32_SpaceRat/blob/main/pic/simlation.png"  />
 
 
 ### library安裝
@@ -30,11 +30,6 @@ To install this library:
  - clone this git repository into your sketchbook/libraries folder.
 
 For more info, see https://www.arduino.cc/en/Guide/Libraries
-
-
-### Original Library
-
-Based in the work of [jrowberg/i2cdevlib](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
 
 
 
