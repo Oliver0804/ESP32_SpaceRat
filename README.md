@@ -17,10 +17,10 @@
 <img src="https://github.com/Oliver0804/ESP32_SpaceRat/blob/main/pic/simlation.png"  />
 
 ### TODO List
- [ ] 加速動控制鼠標功能
- [ ] 低功耗機制 需搭配1.5V升壓3.3V
- [ ] OLED選單功能編寫
- [ ] 加速度校正機制
+- [ ] 加速動控制鼠標功能
+- [ ] 低功耗機制 需搭配1.5V升壓3.3V
+- [ ] OLED選單功能編寫
+- [ ] 加速度校正機制
 
 
 ### library安裝
