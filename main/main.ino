@@ -25,6 +25,6 @@ void setup() {
 void loop() {
   rotary_loop();
   mpu6050_read();
-   bleHID_control();
+  bleHID_control();
 
 }

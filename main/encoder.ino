@@ -1,8 +1,5 @@
 /*
-
-
   connecting Rotary encoder
-
   Rotary encoder side    MICROCONTROLLER side
   -------------------    ---------------------------------------------------------------------
   CLK (A pin)            any microcontroler intput pin with interrupt -> in this example pin 32
@@ -10,20 +7,22 @@
   SW (button pin)        any microcontroler intput pin with interrupt -> in this example pin 25
   GND - to microcontroler GND
   VCC                    microcontroler VCC (then set ROTARY_ENCODER_VCC_PIN -1)
-
 ***OR in case VCC pin is not free you can cheat and connect:***
   VCC                    any microcontroler output pin - but set also ROTARY_ENCODER_VCC_PIN 25
                         in this example pin 25
-
 */
+/*
+ * ESP32因D21腳被I2C占用，占以D25代用
+ * 按下功能改用D33
+ */
 #if defined(ESP8266)
 #define ROTARY_ENCODER_A_PIN D6
 #define ROTARY_ENCODER_B_PIN D5
 #define ROTARY_ENCODER_BUTTON_PIN D7
 #else
 #define ROTARY_ENCODER_A_PIN 32
-#define ROTARY_ENCODER_B_PIN 21
-#define ROTARY_ENCODER_BUTTON_PIN 25
+#define ROTARY_ENCODER_B_PIN 25
+#define ROTARY_ENCODER_BUTTON_PIN 33
 #endif
 #define ROTARY_ENCODER_VCC_PIN -1 /* 27 put -1 of Rotary encoder Vcc is connected directly to 3,3V; else you can use declared output pin for powering rotary encoder */
 

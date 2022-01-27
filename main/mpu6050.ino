@@ -98,5 +98,5 @@ void mpu6050_read() {
   Serial.write((uint8_t)(gz >> 8)); Serial.write((uint8_t)(gz & 0xFF));
 #endif
 
-  delay(1000);
+  delay(50);
 }

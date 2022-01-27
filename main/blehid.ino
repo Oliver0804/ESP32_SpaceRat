@@ -9,7 +9,7 @@ void bleHID_init() {
   bleMouse.begin();
 }
 
-void bleHID_control(){
+void bleHID_control() {
   if (bleMouse.isConnected()) {
     Serial.println("Left click");
     bleMouse.click(MOUSE_LEFT);
@@ -40,4 +40,76 @@ void bleHID_control(){
     delay(500);
 
   }
+}
+
+void bleHID_move() {
+  if (bleMouse.isConnected()) {
+
+    unsigned long startTime;
+
+    Serial.println("Scroll up");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(0, 0, 1);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Scroll down");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(0, 0, -1);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Scroll left");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(0, 0, 0, -1);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Scroll right");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(0, 0, 0, 1);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Move mouse pointer up");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(0, -1);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Move mouse pointer down");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(0, 1);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Move mouse pointer left");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(-1, 0);
+      delay(100);
+    }
+    delay(500);
+
+    Serial.println("Move mouse pointer right");
+    startTime = millis();
+    while (millis() < startTime + 2000) {
+      bleMouse.move(1, 0);
+      delay(100);
+    }
+    delay(500);
+
   }
+}
