@@ -11,6 +11,11 @@
 - MPU6500 (MPU6050)
 - LCD Moudle SSD1308 I2C 0.96
 - EC12/11
+-
+### 接線方式
+
+<img src="https://github.com/Oliver0804/ESP32_SpaceRat/blob/main/pic/simlation.png" height="104" />
+
 
 ### library安裝
 檔案放於Arduino library 
@@ -31,15 +36,5 @@ For more info, see https://www.arduino.cc/en/Guide/Libraries
 
 Based in the work of [jrowberg/i2cdevlib](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
 
-### Maintainer
 
-<a href="https://github.com/sponsors/ElectronicCats">
-  <img src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png" height="104" />
-</a>
-
-Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
-
-### License
-
-MIT
 
