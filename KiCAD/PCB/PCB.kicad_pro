@@ -44,7 +44,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": false,
+          "45_degree_only": true,
           "min_clearance": 0.508
         }
       },
@@ -55,7 +55,25 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|101541000|67967000|4413e955-47e1-402b-9f0f-52e83696c944|82f0d6f1-24bd-4ecd-a97d-e779cc1f75b4",
+        "clearance|102616000|67967000|82f0d6f1-24bd-4ecd-a97d-e779cc1f75b4|618ae6b4-8716-4eac-ac4b-02b9fa4b1b70",
+        "clearance|103616000|67967000|618ae6b4-8716-4eac-ac4b-02b9fa4b1b70|2f9afba9-1bdc-4e44-a3bb-21cf7c99570e",
+        "clearance|76865000|115815000|493923a4-4011-428e-b37c-26949a66b4da|058cabb9-3e14-4d6f-8e30-6f2c358ee947",
+        "copper_edge_clearance|126673749|78913053|2330a65f-a667-4564-b2ea-fd267508069a|0b1bb36d-6044-45a6-bbde-16ad193f6433",
+        "copper_edge_clearance|72488846|80024380|2330a65f-a667-4564-b2ea-fd267508069a|48b2431e-64e7-47cb-9fbf-7f05aec5bdf1",
+        "courtyards_overlap|102982001|93558001|6055532a-24fb-434b-9bbc-cffd4eac4612|f4f72ef8-b903-40b5-ba34-2a0589c063fa",
+        "courtyards_overlap|103030001|101250001|0eca1d5e-9643-4391-a22a-ada8b18f8a7e|6055532a-24fb-434b-9bbc-cffd4eac4612",
+        "courtyards_overlap|103050001|97910001|214cd322-ef2f-49c7-b80f-7f72ab4423fc|6055532a-24fb-434b-9bbc-cffd4eac4612",
+        "courtyards_overlap|104332001|93558001|6055532a-24fb-434b-9bbc-cffd4eac4612|8676286b-55c9-4710-a4b8-e9438a7c5541",
+        "courtyards_overlap|105652001|93558001|6055532a-24fb-434b-9bbc-cffd4eac4612|88d43bbc-ed48-4ca1-a2c7-738d24a2ecef",
+        "courtyards_overlap|106972001|93558001|6055532a-24fb-434b-9bbc-cffd4eac4612|d94689be-58d5-404d-a6c0-8621171989ce",
+        "courtyards_overlap|93549999|93090001|6055532a-24fb-434b-9bbc-cffd4eac4612|79321888-87c6-480b-8a9e-c76be35a6700",
+        "courtyards_overlap|95380001|94570001|6055532a-24fb-434b-9bbc-cffd4eac4612|bd193a59-8018-4194-9c64-8a0de648eec5",
+        "courtyards_overlap|96558001|94574001|6055532a-24fb-434b-9bbc-cffd4eac4612|a1e5447a-4941-429c-945e-0d23481c0bc0",
+        "courtyards_overlap|97060001|97680001|6055532a-24fb-434b-9bbc-cffd4eac4612|ae278b01-6140-4258-b3e1-878a503a5a62",
+        "courtyards_overlap|97710001|103350001|6055532a-24fb-434b-9bbc-cffd4eac4612|dd7a4b59-632f-4645-b2c0-84ac9661c432"
+      ],
       "meta": {
         "version": 2
       },
@@ -353,7 +371,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -417,7 +435,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
