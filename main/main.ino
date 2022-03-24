@@ -32,9 +32,9 @@ void setup() {
 
 void loop() {
   rotary_loop();
-  mpu6050_read(1);
+  //mpu6050_read(1);
 //  bleHID_control();
-   Serial.print(ax); Serial.print("\t");
+   //Serial.print(ax); Serial.print("\t");
 }
 
 void rat2hid(){
